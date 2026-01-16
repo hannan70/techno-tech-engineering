@@ -1,0 +1,158 @@
+/* =========== Footer Section Start Here  ========= */
+.footer_section {
+    .footer_top {
+        background-image: url('../../assets/images/footer/footer_bg.png');
+        padding: 120px 0px 70px 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        background-color: rgba(23, 28, 38, 0.9);
+        background-blend-mode: overlay;
+        color: $white-color;
+        .footer_area {
+            .footer_desc {
+                img {
+
+                }
+                p {
+                    margin: 18px 0px 20px 0px;
+                    color: $white-color;
+                }
+            }
+            .footer_social_list {
+                ul {
+                    li {
+                        a {
+                            width: 40px;
+                            height: 40px;
+                            background-color: $white-color;
+                            border-radius: 50%;
+                            text-align: center;
+                            line-height: 40px;
+                            font-size: 20px;
+                            margin-right: 18px;
+                            display: block; 
+                            @include transition($transition);
+                            &:hover {
+                                background-color: $theme-color;
+                                color: $white-color !important;
+                                @include transform(rotate(360deg));
+                            }
+                        }
+                        &:nth-child(1) {
+                            a {
+                                color: $facebook;
+                            }
+                            
+                        }
+                        &:nth-child(2) {
+                           a {
+                                color: $youtube;
+                           }
+                        }
+                        &:nth-child(3) {
+                            a {
+                                 color: $instagram;
+                            }
+                        }
+                        &:nth-child(4) {
+                            a {
+                                 color: $tumblr;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer_title {
+                h4 {
+                    margin-bottom: 35px;
+                    position: relative;
+                    padding-bottom: 12px; 
+                    font-weight: 700;
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        width: 70px;
+                        height: 2px;
+                        background-color: $theme-color;
+                        left: 0;
+                        bottom: 0;
+                    }
+                }
+                .footer_list {
+                    ul {
+                        li {
+                            @include transition($transition);
+                            padding-bottom: 15px;
+                            &:hover {
+                                transform: translateX(10px); 
+                                a {
+                                    color: $theme-color;
+                                }
+                            }
+                            a {
+                                color: $white-color;
+                                @include transition($transition);
+                                i.fa-solid.fa-angles-right {
+                                    margin-right: 10px;
+                                }  
+                            }
+                            .address {
+                                display: flex;
+                                .address_icon {
+                                    margin-right: 10px;
+                                    img {
+
+                                    }
+                                }
+                                .address_para {
+                                    h5 { 
+                                        font-weight: 600;
+                                    }
+                                    p {
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer_bottom {
+        background-color: $theme-color;
+        padding: 24px 0px;
+        text-align: center;
+        .footer_bottom_content {
+            p {
+                color: $white-color;
+                font-size: $fs-h6;
+                word-spacing: 3px; 
+                a {
+                    color: $white-color;
+                    margin-left: 10px;
+                }
+            } 
+        }
+    }
+}
+
+// For scroll top button
+.scrollToTop {
+    position: fixed;
+    bottom: -30%;
+    right: 5%;
+    z-index: 9999;
+    i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        color: $theme-color;
+        @include transition($transition);
+        background: $white-color;
+        text-align: center;
+    }
+}
+ 

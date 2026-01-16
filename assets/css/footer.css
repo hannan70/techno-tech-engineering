@@ -1,0 +1,106 @@
+
+/* FOOTER SECTION START HERE */
+.footer_top {
+    background-image: url('../../assets/images/footer/footer_bg.png');
+    padding: 120px 0px 70px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-color: rgba(23, 28, 38, 0.9);
+    background-blend-mode: overlay;
+    color: #fff;
+}
+.footer_list ul li a {
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+.footer_list ul li:hover , .footer_list ul li:hover a{
+    transform: translateX(10px); 
+    color: var(--primary_color);
+}
+.footer_social_list ul li a {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    margin-right: 18px;
+    display: block;
+    color: var(--primary_font_color);
+}
+.footer_social_list ul li  a:hover {
+    background-color: var(--primary_color);
+    color: #fff;
+}
+.footer_list ul li {
+    padding-bottom: 15px;
+}
+.footer_list ul li i {
+    margin-right: 10px;
+}
+.footer_desc p {
+    margin: 18px 0px 20px 0px;
+    color: #fff;
+}
+.footer_title h4 {
+    margin-bottom: 35px;
+    position: relative;
+    padding-bottom: 12px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.footer_title h4::after {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 2px;
+    background-color: var(--primary_color);
+    left: 0;
+    bottom: 0;
+}
+.footer_list .address {
+    display: flex;
+}
+.footer_list .address_icon {
+    margin-right: 10px;
+}
+.footer_list .address_para, .address_para p {
+    color: #fff;
+}
+.footer_list .address_para h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.footer_bottom {
+    background-color: var(--primary_font_color);
+    padding: 24px 0px;
+    text-align: center;
+}
+.footer_bottom_content p {
+    color: #fff;
+    font-size: 16px;
+    word-spacing: 3px;
+}
+.footer_bottom_content p a {
+    color: var(--primary_color);
+    margin-left: 10px;
+}
+.scrollToTop {
+    position: fixed;
+    bottom: -30%;
+    right: 5%;
+    z-index: 9999;
+}
+.scrollToTop i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.3s ease;
+    background: var(--primary_color);
+    text-align: center;
+}
+/* FOOTER SECTION END HERE */
