@@ -1,9 +1,25 @@
 .banner_section {
     background-image: url('../../assets/images/banner.png');
     padding-top: 30px;
+    background-color: #00000078;
+    background-blend-mode: color;
    .banner_content {
         text-align: center;
-        padding: 200px 0px;
-        color: #fff;
+        padding: 250px 0px 300px;
+        color: #fff; 
+        .banner_content_inner {
+          p {
+               display: inline-block;
+               background-color: #16434375;
+               padding: 10px 22px;
+               border-radius: 10px;
+               margin-bottom: 20px;
+          }    
+          h2 {
+               font-size: 72px;
+               font-weight: 700;
+               line-height: 75px; 
+          }
+        }
    }
 }

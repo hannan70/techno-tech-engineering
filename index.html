@@ -4,7 +4,7 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Carzone</title>
+     <title>Techno Tech Engineering</title>
      <!-- google fonts -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +17,7 @@
      <link rel="stylesheet" href="assets/css/all.min.css">
      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"> 
      <link rel="stylesheet" href="assets/css/nice-select.css"> 
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
      <link rel="stylesheet" href="assets/css/style.css">
      <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
@@ -32,6 +33,7 @@
           </div>
      </div>
      <!-- preloader ending here -->
+
 
      <!-- mobile menu -->
      <div class="mobile_menu">
@@ -81,9 +83,11 @@
      </div>
      <!-- mobile menu -->
 
+
+     <!-- banner section start here -->
      <div class="banner_section">
           <!-- header section start here -->
-          <div class="header_section" id="menu_section"> 
+          <div class="header_section"> 
                <div class="container"> 
                     <div class="header_top">
                          <div class="header_left">
@@ -111,25 +115,29 @@
                               </ul>
                          </div>
                     </div>
-                    <div class="header_inner d-flex justify-content-between align-items-center">
-                         <div class="logo">
-                              <a href="index.html"><img src="assets/images/header-logo.png" alt="logo"></a>
-                         </div> 
-                         <nav class="primary_menu">
-                              <ul class="d-flex justify-content-between align-items-center">
-                                   <li><a href="index.html">Home</a></li>
-                                   <li><a href="product.html">Products</a></li>
-                                   <li><a href="about-us.html">About Us</a></li> 
-                                   <li><a href="blog.html">Blog</a></li>
-                                   <li><a href="blog.html">Our Vision</a></li>
-                                   <li><a href="contact.html">Contact</a></li>
-                              </ul> 
-                         </nav>    
-                    </div> 
+                    <div class="header_bottom" id="menu_section">
+                         <div class="container"> 
+                              <div class="header_inner d-flex justify-content-between align-items-center">
+                                   <div class="logo">
+                                        <a href="index.html"><img src="assets/images/header-logo.png" alt="logo"></a>
+                                   </div> 
+                                   <nav class="primary_menu">
+                                        <ul class="d-flex justify-content-between align-items-center">
+                                             <li><a href="index.html">Home</a></li>
+                                             <li><a href="product.html">Products</a></li>
+                                             <li><a href="about-us.html">About Us</a></li> 
+                                             <li><a href="blog.html">Blog</a></li>
+                                             <li><a href="blog.html">Our Vision</a></li>
+                                             <li><a href="contact.html">Contact</a></li>
+                                        </ul> 
+                                   </nav>    
+                              </div> 
+                         </div>
+                    </div>
                </div> 
           </div>
           <!-- header section end here -->
-          <div class="banner_content">
+          <div class="banner_content" data-aos="fade-up" data-aos-duration="1000">
                <div class="container">
                     <div class="banner_content_inner">
                          <p>Core Hardware Architecture</p>
@@ -138,16 +146,720 @@
                </div>
           </div>
      </div>
+     <!-- banner section end here -->
 
 
+     <!-- category section start here -->
+     <div class="category">
+          <div class="container">
+               <div class="category_area">
+                    <div class="category_title" data-aos="fade-up" data-aos-duration="1000">
+                         <h3>Top Categories</h3>
+                    </div>
+                    <div class="category_inner" data-aos="fade-up" data-aos-duration="1000">
+                         <div class="swiper category_swipper">
+                              <div class="swiper-wrapper">
+                                   <div class="swiper-slide">
+                                        <div class="category_item">
+                                             <img src="assets/images/cat01.png" alt="category image">
+                                             <h4>Lan</h4>
+                                             <p>27 items</p>
+                                        </div>
+                                   </div> 
+                                   <div class="swiper-slide">
+                                        <div class="category_item">
+                                             <img src="assets/images/cat02.png" alt="category image">
+                                             <h4>Lan</h4>
+                                             <p>27 items</p>
+                                        </div>
+                                   </div> 
+                                   <div class="swiper-slide">
+                                        <div class="category_item">
+                                             <img src="assets/images/cat03.png" alt="category image">
+                                             <h4>Lan</h4>
+                                             <p>27 items</p>
+                                        </div>
+                                   </div> 
+                                   <div class="swiper-slide">
+                                        <div class="category_item">
+                                             <img src="assets/images/cat04.png" alt="category image">
+                                             <h4>Lan</h4>
+                                             <p>27 items</p>
+                                        </div>
+                                   </div> 
+                                   <div class="swiper-slide">
+                                        <div class="category_item">
+                                             <img src="assets/images/cat05.png" alt="category image">
+                                             <h4>Lan</h4>
+                                             <p>27 items</p>
+                                        </div>
+                                   </div> 
+                                   <div class="swiper-slide">
+                                        <div class="category_item">
+                                             <img src="assets/images/cat03.png" alt="category image">
+                                             <h4>Lan</h4>
+                                             <p>27 items</p>
+                                        </div>
+                                   </div> 
+                              </div>
+                         </div> 
+                         <div class="swiper-button-next"></div>
+                         <div class="swiper-button-prev"></div>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <!-- category section end here -->
+
+     <!-- product section start here -->
+     <div class="product_section">
+          <div class="container">
+               <div class="product_title text-center" data-aos="fade-up" data-aos-duration="1000">
+                    <h3>Our Product</h3>
+               </div>
+               <div class="product_section_inner">
+                    <div class="row g-4">
+                         <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                              <div class="product_item">
+                                   <div class="thumb">
+                                        <a href="#"><img src="assets/images/product01.png" alt="product-image"></a>
+                                   </div>
+                                   <div class="product_content">
+                                        <div class="product_content_top">
+                                             <div class="price">
+                                                  <span>BDT-1000000</span>
+                                             </div>
+                                             <div class="rating">
+                                                  <ul>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-regular fa-star"></i></li>
+                                                       <li><i class="fa-regular fa-star"></i></li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                        <div class="product_sub_title">
+                                             <a href="#">Smart Elevator Hardware for Modern Buildings</a>
+                                        </div>
+                                        <div class="product_btn">
+                                             <a href="#">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                              <div class="product_item">
+                                   <div class="thumb">
+                                        <a href="#"><img src="assets/images/product02.png" alt="product-image"></a>
+                                   </div>
+                                   <div class="product_content">
+                                        <div class="product_content_top">
+                                             <div class="price">
+                                                  <span>BDT-1000000</span>
+                                             </div>
+                                             <div class="rating">
+                                                  <ul>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-regular fa-star"></i></li>
+                                                       <li><i class="fa-regular fa-star"></i></li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                        <div class="product_sub_title">
+                                             <a href="#">Luxury Stone Surfaces and Installation Experts</a>
+                                        </div>
+                                        <div class="product_btn">
+                                             <a href="#">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                              <div class="product_item">
+                                   <div class="thumb">
+                                        <a href="#"><img src="assets/images/product03.png" alt="product-image"></a>
+                                   </div>
+                                   <div class="product_content">
+                                        <div class="product_content_top">
+                                             <div class="price">
+                                                  <span>BDT-1000000</span>
+                                             </div>
+                                             <div class="rating">
+                                                  <ul>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-regular fa-star"></i></li>
+                                                       <li><i class="fa-regular fa-star"></i></li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                        <div class="product_sub_title">
+                                             <a href="#">Premium Lift Accessories and Essential Parts</a>
+                                        </div>
+                                        <div class="product_btn">
+                                             <a href="#">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                              <div class="product_item">
+                                   <div class="thumb">
+                                        <a href="#"><img src="assets/images/product04.png" alt="product-image"></a>
+                                   </div>
+                                   <div class="product_content">
+                                        <div class="product_content_top">
+                                             <div class="price">
+                                                  <span>BDT-1000000</span>
+                                             </div>
+                                             <div class="rating">
+                                                  <ul>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-regular fa-star"></i></li>
+                                                       <li><i class="fa-regular fa-star"></i></li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                        <div class="product_sub_title">
+                                             <a href="#">Advanced Hardware for Seamless LED Walls</a>
+                                        </div>
+                                        <div class="product_btn">
+                                             <a href="#">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                              <div class="product_item">
+                                   <div class="thumb">
+                                        <a href="#"><img src="assets/images/product05.png" alt="product-image"></a>
+                                   </div>
+                                   <div class="product_content">
+                                        <div class="product_content_top">
+                                             <div class="price">
+                                                  <span>BDT-1000000</span>
+                                             </div>
+                                             <div class="rating">
+                                                  <ul>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-regular fa-star"></i></li>
+                                                       <li><i class="fa-regular fa-star"></i></li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                        <div class="product_sub_title">
+                                             <a href="#">Expert Lexmark Printer Repair and Maintenance</a>
+                                        </div>
+                                        <div class="product_btn">
+                                             <a href="#">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                              <div class="product_item">
+                                   <div class="thumb">
+                                        <a href="#"><img src="assets/images/product06.png" alt="product-image"></a>
+                                   </div>
+                                   <div class="product_content">
+                                        <div class="product_content_top">
+                                             <div class="price">
+                                                  <span>BDT-1000000</span>
+                                             </div>
+                                             <div class="rating">
+                                                  <ul>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-regular fa-star"></i></li>
+                                                       <li><i class="fa-regular fa-star"></i></li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                        <div class="product_sub_title">
+                                             <a href="#">Professional Service for Canon Printing Systems</a>
+                                        </div>
+                                        <div class="product_btn">
+                                             <a href="#">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                              <div class="product_item">
+                                   <div class="thumb">
+                                        <a href="#"><img src="assets/images/product07.png" alt="product-image"></a>
+                                   </div>
+                                   <div class="product_content">
+                                        <div class="product_content_top">
+                                             <div class="price">
+                                                  <span>BDT-1000000</span>
+                                             </div>
+                                             <div class="rating">
+                                                  <ul>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-regular fa-star"></i></li>
+                                                       <li><i class="fa-regular fa-star"></i></li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                        <div class="product_sub_title">
+                                             <a href="#">Authorized Service for Mecer Computing Systems</a>
+                                        </div>
+                                        <div class="product_btn">
+                                             <a href="#">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                              <div class="product_item">
+                                   <div class="thumb">
+                                        <a href="#"><img src="assets/images/product08.png" alt="product-image"></a>
+                                   </div>
+                                   <div class="product_content">
+                                        <div class="product_content_top">
+                                             <div class="price">
+                                                  <span>BDT-1000000</span>
+                                             </div>
+                                             <div class="rating">
+                                                  <ul>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-regular fa-star"></i></li>
+                                                       <li><i class="fa-regular fa-star"></i></li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                        <div class="product_sub_title">
+                                             <a href="#">Advanced Solutions for Cavil Technical Systems</a>
+                                        </div>
+                                        <div class="product_btn">
+                                             <a href="#">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                              <div class="product_item">
+                                   <div class="thumb">
+                                        <a href="#"><img src="assets/images/product09.png" alt="product-image"></a>
+                                   </div>
+                                   <div class="product_content">
+                                        <div class="product_content_top">
+                                             <div class="price">
+                                                  <span>BDT-1000000</span>
+                                             </div>
+                                             <div class="rating">
+                                                  <ul>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-regular fa-star"></i></li>
+                                                       <li><i class="fa-regular fa-star"></i></li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                        <div class="product_sub_title">
+                                             <a href="#">ptimize Your PC with Expert Hardware</a>
+                                        </div>
+                                        <div class="product_btn">
+                                             <a href="#">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                              <div class="product_item">
+                                   <div class="thumb">
+                                        <a href="#"><img src="assets/images/product10.png" alt="product-image"></a>
+                                   </div>
+                                   <div class="product_content">
+                                        <div class="product_content_top">
+                                             <div class="price">
+                                                  <span>BDT-1000000</span>
+                                             </div>
+                                             <div class="rating">
+                                                  <ul>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-regular fa-star"></i></li>
+                                                       <li><i class="fa-regular fa-star"></i></li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                        <div class="product_sub_title">
+                                             <a href="#">Custom Interior Buttons for Modern Lifts</a>
+                                        </div>
+                                        <div class="product_btn">
+                                             <a href="#">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                              <div class="product_item">
+                                   <div class="thumb">
+                                        <a href="#"><img src="assets/images/product11.png" alt="product-image"></a>
+                                   </div>
+                                   <div class="product_content">
+                                        <div class="product_content_top">
+                                             <div class="price">
+                                                  <span>BDT-1000000</span>
+                                             </div>
+                                             <div class="rating">
+                                                  <ul>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-regular fa-star"></i></li>
+                                                       <li><i class="fa-regular fa-star"></i></li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                        <div class="product_sub_title">
+                                             <a href="#">Smart Hardware for Dynamic Video Walls</a>
+                                        </div>
+                                        <div class="product_btn">
+                                             <a href="#">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                              <div class="product_item">
+                                   <div class="thumb">
+                                        <a href="#"><img src="assets/images/product12.png" alt="product-image"></a>
+                                   </div>
+                                   <div class="product_content">
+                                        <div class="product_content_top">
+                                             <div class="price">
+                                                  <span>BDT-1000000</span>
+                                             </div>
+                                             <div class="rating">
+                                                  <ul>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-regular fa-star"></i></li>
+                                                       <li><i class="fa-regular fa-star"></i></li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                        <div class="product_sub_title">
+                                             <a href="#">Precision Engineering for All Lift Installations</a>
+                                        </div>
+                                        <div class="product_btn">
+                                             <a href="#">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="view_more">
+                         <a href="product.html">View More Product</a>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <!-- product section end here -->
+
+     <!-- brand section start here -->
+     <div class="brand_section">
+          <div class="container">
+               <div class="brand_area">
+                    <div class="brand_inner">
+                         <div class="brand_item">
+                              <img src="assets/images/brand01.png" alt="brand-image">
+                         </div>
+                         <div class="brand_item">
+                              <img src="assets/images/brand02.png" alt="brand-image">
+                         </div>
+                         <div class="brand_item">
+                              <img src="assets/images/brand03.png" alt="brand-image">
+                         </div>
+                         <div class="brand_item">
+                              <img src="assets/images/brand04.png" alt="brand-image">
+                         </div>
+                         <div class="brand_item">
+                              <img src="assets/images/brand05.png" alt="brand-image">
+                         </div> 
+                    </div>
+               </div>
+          </div>
+     </div>
+     <!-- brand section end here -->
+
+     <!-- testmonial section start here -->
+     <div class="testmonial_section">
+          <div class="container">
+               <div class="testmonial_area">
+                    <div class="testmonial_title">
+                         <h3>What Our  Clients Say </h3>
+                    </div>
+                    <div class="testmonial_inner">
+                         <div class="row g-4">
+                              <div class="col-lg-2 text-center">
+                                   <img src="assets/images/quote.png" alt="quote">
+                              </div>
+                              <div class="col-lg-5">
+                                   <div class="row g-4">      
+                                        <div class="col-lg-12">
+                                             <div class="testmonial_item fist_item">
+                                                  <p class="testimonial-text">
+                                                  Use the "find and replace" feature in your favorite online word-processing
+                                                  program to make this easier. Then, load your cleaned-up sample text into a
+                                                  generic random text generator and set the number of words or lines of
+                                                  necessary placeholder text for your layout.
+                                                  </p> 
+                                                  <div class="testimonial-footer">
+                                                       <img
+                                                            src="assets/images/testmonial01.png"
+                                                            alt="Farsha Faharin"
+                                                            class="avatar"
+                                                       />
+                                                       <div class="info">
+                                                            <div class="stars">
+                                                                 <ul>
+                                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                                      <li><i class="fa-regular fa-star"></i></li>
+                                                                      <li><i class="fa-regular fa-star"></i></li>
+                                                                 </ul>
+                                                            </div>
+                                                            <h4>Farsha Faharin</h4>
+                                                            <p>SQA, Bangladesh IT</p>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                             <div class="testmonial_item">
+                                                  <p class="testimonial-text">
+                                                  Use the "find and replace" feature in your favorite online word-processing
+                                                  program to make this easier. Then, load your cleaned-up sample text into a
+                                                  generic random text generator and set the number of words or lines of
+                                                  necessary placeholder text for your layout.
+                                                  </p> 
+                                                  <div class="testimonial-footer">
+                                                       <img
+                                                            src="assets/images/testmonial01.png"
+                                                            alt="Farsha Faharin"
+                                                            class="avatar"
+                                                       />
+                                                       <div class="info">
+                                                            <div class="stars">
+                                                                 <ul>
+                                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                                      <li><i class="fa-regular fa-star"></i></li>
+                                                                      <li><i class="fa-regular fa-star"></i></li>
+                                                                 </ul>
+                                                            </div>
+                                                            <h4>Farsha Faharin</h4>
+                                                            <p>SQA, Bangladesh IT</p>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div> 
+                                   </div> 
+                              </div>
+                              <div class="col-lg-5">
+                                   <div class="row g-4"> 
+                                        <div class="col-lg-12">
+                                             <div class="testmonial_item">
+                                                  <p class="testimonial-text">
+                                                  Use the "find and replace" feature in your favorite online word-processing
+                                                  program to make this easier. Then, load your cleaned-up sample text into a
+                                                  generic random text generator and set the number of words or lines of
+                                                  necessary placeholder text for your layout.
+                                                  </p> 
+                                                  <div class="testimonial-footer">
+                                                       <img
+                                                            src="assets/images/testmonial02.png"
+                                                            alt="Farsha Faharin"
+                                                            class="avatar"
+                                                       />
+                                                       <div class="info">
+                                                            <div class="stars">
+                                                                 <ul>
+                                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                                      <li><i class="fa-regular fa-star"></i></li>
+                                                                      <li><i class="fa-regular fa-star"></i></li>
+                                                                 </ul>
+                                                            </div>
+                                                            <h4>Mohammad Ali</h4>
+                                                            <p>CEO and Co-Founder, B2Win</p>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                             <div class="testmonial_item">
+                                                  <p class="testimonial-text">
+                                                  Use the "find and replace" feature in your favorite online word-processing
+                                                  program to make this easier. Then, load your cleaned-up sample text into a
+                                                  generic random text generator and set the number of words or lines of
+                                                  necessary placeholder text for your layout.
+                                                  </p> 
+                                                  <div class="testimonial-footer">
+                                                       <img
+                                                            src="assets/images/testmonial03.png"
+                                                            alt="Farsha Faharin"
+                                                            class="avatar"
+                                                       />
+                                                       <div class="info">
+                                                            <div class="stars">
+                                                                 <ul>
+                                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                                      <li><i class="fa-regular fa-star"></i></li>
+                                                                      <li><i class="fa-regular fa-star"></i></li>
+                                                                 </ul>
+                                                            </div>
+                                                            <h4>Hannan Bhuiyan</h4>
+                                                            <p>Machine Learning Engineer</p>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div> 
+                                   </div>
+                              </div> 
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <!-- testmonial section end here -->
 
 
+     <!-- blog section section end here -->
+     <div class="blog_section">
+          <div class="container">
+               <div class="blog_area">
+                     <div class="blog_title text-center">
+                         <h3>Recent News Articles</h3> 
+                    </div> 
+                    <div class="blog_ineer">
+                         <div class="row g-4">
+                              <div class="col-lg-4 col-md-6 col-12">
+                                   <div class="blog_item">
+                                        <div class="blog-image">
+                                             <a href="#"><img src="assets/images/blog/blog01.png" alt="UX/UI design meeting"></a>
+                                        </div>
 
+                                        <div class="blog-content">
+                                             <div class="blog-meta">
+                                                  <span class="meta-item">
+                                                       <i class="fa-solid fa-calendar-days"></i>
+                                                       December 15, 2025
+                                                  </span>
+                                                  <span class="meta-item">
+                                                       <i class="fa-solid fa-user"></i>
+                                                       By Hannan Bhuiyan
+                                                  </span>
+                                             </div>
+
+                                             <a href="#" class="blog-title">
+                                                  Designer’s checklist for every UX / UI project.
+                                             </a>
+
+                                             <p class="blog-desc">
+                                                  Our mission is to create the world’s most usable healthcare
+                                                  compa creating high-quality that are iconic, sustainable packaging...
+                                             </p>
+
+                                             <a href="#" class="read-more">Read More</a>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-12">
+                                   <div class="blog_item">
+                                        <div class="blog-image">
+                                             <a href="#"><img src="assets/images/blog/blog02.png" alt="UX/UI design meeting"></a>
+                                        </div>
+
+                                        <div class="blog-content">
+                                             <div class="blog-meta">
+                                                  <span class="meta-item">
+                                                       <i class="fa-solid fa-calendar-days"></i>
+                                                       December 15, 2025
+                                                  </span>
+                                                  <span class="meta-item">
+                                                       <i class="fa-solid fa-user"></i>
+                                                       By Hannan Bhuiyan
+                                                  </span>
+                                             </div>
+
+                                             <a href="#" class="blog-title">
+                                                  Print, publishing qui visual layout mockps.
+                                             </a>
+
+                                             <p class="blog-desc">
+                                                  Our mission is to create the world’s most usable healthcare
+                                                  compa creating high-quality that are iconic, sustainable packaging...
+                                             </p>
+
+                                             <a href="#" class="read-more">Read More</a>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-12">
+                                   <div class="blog_item">
+                                        <div class="blog-image">
+                                             <a href="#"><img src="assets/images/blog/blog03.png" alt="UX/UI design meeting"></a>
+                                        </div>
+
+                                        <div class="blog-content">
+                                             <div class="blog-meta">
+                                                  <span class="meta-item">
+                                                       <i class="fa-solid fa-calendar-days"></i>
+                                                       December 15, 2025
+                                                  </span>
+                                                  <span class="meta-item">
+                                                       <i class="fa-solid fa-user"></i>
+                                                       By Hannan Bhuiyan
+                                                  </span>
+                                             </div>
+
+                                             <a href="#" class="blog-title">
+                                                  Make more productive work flow in few steps.
+                                             </a>
+
+                                             <p class="blog-desc">
+                                                  Our mission is to create the world’s most usable healthcare
+                                                  compa creating high-quality that are iconic, sustainable packaging...
+                                             </p>
+
+                                             <a href="#" class="read-more">Read More</a>
+                                        </div>
+                                   </div>
+                              </div> 
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <!-- blog section section end here -->
 
      
-     <div class="main_section" style="margin-top: 100px; margin-bottom: 100px;">
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam officiis id nostrum iure natus beatae libero excepturi, reprehenderit qui quibusdam voluptatibus mollitia voluptates sit sequi enim pariatur debitis illo odio perferendis non vero facilis eius. Placeat ipsum illum a totam natus voluptas magni quae est cupiditate, assumenda aliquam, minus, libero facilis quasi unde mollitia blanditiis eius consequatur? Distinctio asperiores, numquam unde doloribus rem esse! Nam necessitatibus repellendus, blanditiis repudiandae impedit a numquam voluptatum totam. Aspernatur quos, accusantium consequatur corporis ipsa aut nobis et inventore illo natus harum, saepe possimus fugiat voluptate voluptatibus dicta beatae quam iste aperiam, nemo enim veritatis cumque. Laboriosam quaerat omnis necessitatibus, assumenda officiis delectus, saepe perferendis facilis ipsum dolore, esse quasi? Dolore, temporibus eos mollitia similique doloribus animi expedita ducimus dolor neque, reprehenderit ullam aliquid iure. Voluptas doloribus itaque odit repudiandae, ut debitis pariatur facere aperiam, facilis in voluptatibus a, ad quo quam iste vel. Sunt praesentium ipsum quasi architecto temporibus consectetur saepe optio sed debitis eum aliquid obcaecati vitae quae molestiae harum quibusdam voluptas ipsa voluptates, eaque aut. Laudantium eos in dolor cum quidem quasi veritatis, labore possimus? Corrupti pariatur, ipsa sapiente iure, tempore et ipsum, fuga consectetur quibusdam id asperiores sit vel quam aliquam. Doloribus, vitae nulla? Officia temporibus obcaecati explicabo dolorum corrupti optio placeat minima saepe quas architecto deserunt natus harum recusandae magnam error quos eum omnis aliquam, quisquam et enim? A, soluta id ipsa molestiae repudiandae nemo distinctio aliquam qui accusamus voluptatum fuga delectus saepe necessitatibus. Nobis, deserunt! Nam expedita nemo vitae inventore, unde consequuntur voluptatem eveniet asperiores sit illum ea corporis, totam nesciunt! Ipsam qui, sunt quod neque ducimus accusamus sed dolore sint reiciendis vero dignissimos exercitationem repellendus recusandae quis maxime molestiae, fugiat vitae iure ipsa illo incidunt? At, ipsum perferendis, voluptatum libero ad, aliquid architecto sunt doloribus repellendus quibusdam accusamus ducimus. Eos, delectus! Perspiciatis quisquam rem accusantium ea similique beatae repellat, ad omnis sequi debitis asperiores, provident necessitatibus voluptates sit. Eveniet, esse! Quidem quia animi corrupti sit, excepturi alias saepe itaque ullam necessitatibus ex magni fugiat reiciendis harum quos, beatae expedita placeat adipisci. Alias, possimus. Ex, perspiciatis dolores repellendus debitis est, aperiam accusamus excepturi quis nisi maiores, reiciendis sit. Perspiciatis voluptatum, sunt possimus laboriosam amet ratione exercitationem officia animi minus quae blanditiis aspernatur neque, consequuntur qui veritatis nemo quibusdam rem soluta dolores cum facilis, eum modi placeat corrupti! Ipsa fugiat ea numquam inventore nulla laboriosam autem odit voluptates dolores quis, consectetur, amet facere distinctio est soluta laborum accusantium dolor! Temporibus ratione corrupti ad doloribus eius quod, beatae aspernatur, laudantium incidunt, inventore optio? Hic excepturi consectetur ratione cupiditate natus veritatis distinctio dolore magni, nam exercitationem in quisquam, laboriosam sint? Perspiciatis dolorem ea repellendus eligendi sapiente, dolorum aut ipsa voluptate quidem, reiciendis quo culpa, corrupti ex ut similique illum laborum debitis doloremque tempora voluptates? Labore doloribus tempore qui accusamus fuga, unde quasi perferendis quo natus distinctio veritatis, expedita ab iste saepe, odio earum impedit eveniet inventore modi dolorem accusantium minima placeat tempora. Fugit architecto asperiores quos modi saepe aliquid tenetur quam dolore? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid dolorem voluptates harum, nemo perferendis nesciunt cumque quis fugit explicabo corrupti in. Alias asperiores est, expedita ex maxime, architecto similique temporibus officia ipsa totam laudantium consectetur illum tenetur debitis amet assumenda aspernatur, ducimus quam repellat fugiat autem magnam excepturi dolorem modi. Modi asperiores, dolores optio dolorum assumenda possimus dolorem unde quo, animi voluptatem aspernatur cumque minus sapiente quisquam eum perspiciatis velit! Optio quisquam sit porro dolores ex doloremque quaerat officiis, tenetur atque laboriosam consectetur, ducimus, explicabo reiciendis tempore libero. Eos, expedita velit reiciendis animi nam assumenda facilis ex corporis tempora officiis labore modi dolores similique, debitis ad? Neque, iste ratione quidem fugit alias laborum ab adipisci, enim suscipit nesciunt velit quo dolore voluptates iure perspiciatis sequi reprehenderit. Alias ad tenetur error ut est impedit totam explicabo ipsam sed numquam, nostrum assumenda delectus odit fuga necessitatibus illum, maiores recusandae officiis fugiat. Libero excepturi, aliquid dicta illo iure repudiandae aut impedit? Minima minus dolore illum, magni excepturi deleniti dolores repellat pariatur vitae error? Nam, suscipit. Pariatur facere officiis, excepturi dolorum, dolorem enim inventore, quo incidunt perferendis ipsam molestiae veritatis mollitia corrupti corporis deleniti distinctio? Modi quos animi vel sit! Quae assumenda pariatur natus officiis odit, cum accusamus veniam expedita culpa maxime quos ex et, minima laborum quam facere nesciunt id recusandae est unde optio. Suscipit laudantium repudiandae temporibus odit officia qui, eligendi quisquam! Blanditiis vitae tenetur laboriosam maxime, similique dolorem id perferendis aperiam veritatis odio quasi excepturi beatae exercitationem repellat amet asperiores, molestias deleniti. Omnis, obcaecati possimus fuga ratione dignissimos tempora necessitatibus non quae blanditiis molestias veritatis rem sunt doloremque. Odit inventore veniam id neque cumque suscipit eligendi esse accusantium libero dicta eaque sit iure illo necessitatibus corporis natus ipsa, rerum repellat. Accusamus, sit dolores. Corrupti ullam aut at quos praesentium, odit ducimus cumque velit, et, suscipit tenetur incidunt beatae omnis laudantium molestiae perferendis quibusdam repellendus soluta sequi tempore voluptatem ratione! Ab aut, dolore expedita totam repudiandae numquam, quam explicabo voluptate impedit, excepturi consectetur at adipisci neque aspernatur maiores mollitia. Iure, aperiam obcaecati dignissimos pariatur veritatis asperiores consectetur veniam, ex a corporis reprehenderit illum praesentium dolorum voluptates expedita quisquam perspiciatis inventore. Voluptatum ducimus et officia ipsam sint quas corporis magni delectus fugit at culpa, excepturi reiciendis veritatis quidem, ipsa dolore. Unde eius mollitia deleniti exercitationem asperiores accusantium fugit quas iure temporibus, repudiandae atque saepe, obcaecati nihil cumque magni pariatur magnam, provident explicabo?</p>
-     </div>
 
      <!-- footer section start here -->
      <footer class="footer_section">
@@ -155,8 +867,8 @@
                <div class="container">
                     <div class="footer_area">
                          <div class="row">
-                              <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                                  <div class="footer_desc">
+                              <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+                                  <div class="footer_desc mt-2">
                                         <img src="assets/images/footer/footer-logo.png" alt="footer_logo">
                                         <p>
                                              ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -172,55 +884,31 @@
                                         </ul>
                                    </div>
                               </div>
-                              <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                              <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-start justify-content-lg-center">
                                    <div class="footer_title">
                                         <h4>Useful Links</h4>
                                         <div class="footer_list">
                                              <ul> 
                                                   <li>
-                                                       <a href="index.html"><i class="fa-solid fa-angles-right"></i> Home</a> 
+                                                       <a href="index.html"><i class="fa-solid fa-angles-right"></i>Product</a> 
                                                   </li>
                                                   <li>
-                                                       <a href="blog.html"><i class="fa-solid fa-angles-right"></i>Blog</a> 
+                                                       <a href="blog.html"><i class="fa-solid fa-angles-right"></i>About Us</a> 
                                                   </li>
                                                   <li>
-                                                       <a href="payment-method.html"><i class="fa-solid fa-angles-right"></i>Payment</a>
+                                                       <a href="category.html"><i class="fa-solid fa-angles-right"></i>Blog</a>
                                                   </li>
                                                   <li>
-                                                       <a href="category.html"><i class="fa-solid fa-angles-right"></i> Category</a>
+                                                       <a href="payment-method.html"><i class="fa-solid fa-angles-right"></i> Privacy Policy</a>
                                                   </li>
                                                   <li>
-                                                       <a href="user-dashboard.html"><i class="fa-solid fa-angles-right"></i> My Dashboard</a>
+                                                       <a href="user-dashboard.html"><i class="fa-solid fa-angles-right"></i>Terms and Conditions</a>
                                                   </li>
                                              </ul>
                                         </div>
                                    </div>
-                              </div>
-                              <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                                   <div class="footer_title">
-                                        <h4>My Account</h4>
-                                        <div class="footer_list">
-                                             <ul> 
-                                                  <li>
-                                                       <a href="login.html"><i class="fa-solid fa-angles-right"></i> Login</a> 
-                                                  </li>
-                                                  <li>
-                                                       <a href="register.html"><i class="fa-solid fa-angles-right"></i>Registration</a> 
-                                                  </li>
-                                                  <li>
-                                                       <a href="add-listing.html"><i class="fa-solid fa-angles-right"></i>Add Listing</a>
-                                                  </li>
-                                                  <li>
-                                                       <a href="about-us.html"><i class="fa-solid fa-angles-right"></i>About Us</a>
-                                                  </li>
-                                                  <li>
-                                                       <a href="terms-condition.html"><i class="fa-solid fa-angles-right"></i>Terms And Condition</a>
-                                                  </li>
-                                             </ul>
-                                        </div>
-                                   </div>
-                              </div>
-                              <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                              </div> 
+                              <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-start justify-content-lg-center">
                                    <div class="footer_title">
                                         <h4>Contact Us</h4>
                                         <div class="footer_list">
@@ -258,9 +946,18 @@
                                                                  <p>(123) 123-4567</p>
                                                             </div>
                                                        </div>
-                                                  </li>
-                                                  
+                                                  </li> 
                                              </ul>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-end justify-content-lg-center">
+                                   <div class="footer_title">
+                                        <h4>News letter</h4>
+                                        <div class="subscribe">
+                                             <p>Join our newsletter for latest updates</p>
+                                             <input type="text">
+                                             <div class="icon"><i class="fa-solid fa-location-arrow"></i></div>
                                         </div>
                                    </div>
                               </div>
@@ -286,6 +983,7 @@
      <script src="assets/js/fontawesome.min.js" ></script>
      <script src="assets/js/swiper-bundle.min.js" ></script>
      <script src="assets/js/jquery.nice-select.min.js" ></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
      <script src="assets/js/scripts.js" ></script>
 </body>

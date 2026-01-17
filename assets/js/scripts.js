@@ -9,6 +9,7 @@ Version      : 1.0
 	/*START SWIPER JS*/
 
 	new WOW().init();
+	AOS.init();
 
 	// loader
 	$(window).on( "load", function() {
@@ -23,53 +24,31 @@ Version      : 1.0
 	$(".listing_select").niceSelect()
 
 
-	new Swiper(".review_slider", {
-		slidesPerView: 3,
-		speed: 3000,
+	new Swiper(".category_swipper", {
+		slidesPerView: 5,
+		spaceBetween: 30,
+		speed: 1000,
 		navigation: {
 		  nextEl: ".swiper-button-next",
 		  prevEl: ".swiper-button-prev",
 		},
+		loop: true,
 		breakpoints: {
 			1200: {
-				slidesPerView: 1,
+				slidesPerView: 5,
 			},
 			1199: {
-				slidesPerView: 1,
+				slidesPerView: 4,
+			}, 
+			767: {
+				slidesPerView: 3,
 			}, 
 			320: {
-				slidesPerView: 1,
-			}, 
-		},
-	});
-
-
-	new Swiper(".latest_listing", {
-		slidesPerView: 3,
-		spaceBetween: 30,
-		loop: true,
-		speed: 3000,
-		autoplay: {
-			enabled: true,
-			delay: 2000,
-		},
-		pagination: {
-		  el: ".swiper-pagination",
-		  clickable: true,
-		},
-		breakpoints: {
-			1200: {
-				slidesPerView: 3,
-			},
-			1199: {
 				slidesPerView: 2,
 			}, 
-			320: {
-				slidesPerView: 1,
-			}, 
 		},
 	});
-	  
+ 
 	  
 	/*END SWIPER JS*/	
 

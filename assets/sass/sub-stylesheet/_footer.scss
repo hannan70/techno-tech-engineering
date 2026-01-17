@@ -5,9 +5,7 @@
         padding: 120px 0px 70px 0px;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: bottom;
-        background-color: rgba(23, 28, 38, 0.9);
-        background-blend-mode: overlay;
+        background-position: center; 
         color: $white-color;
         .footer_area {
             .footer_desc {
@@ -85,10 +83,7 @@
                             @include transition($transition);
                             padding-bottom: 15px;
                             &:hover {
-                                transform: translateX(10px); 
-                                a {
-                                    color: $theme-color;
-                                }
+                                transform: translateX(10px);  
                             }
                             a {
                                 color: $white-color;
