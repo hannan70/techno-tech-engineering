@@ -35,3 +35,24 @@
         }
    }
 }
+
+// subbanner
+.subbanner {
+     background-image: url('../../assets/images/subbanner.png');
+    padding-top: 30px;
+    background-color: #00000078;
+    background-blend-mode: color;
+     .subbanner_content {
+          text-align: center;
+          color: #fff;
+          padding: 100px 0px;
+
+          h2 {
+               font-weight: 700;
+               margin-bottom: 7px;
+          }
+          a {
+               color: #fff;
+          }
+     }
+}
