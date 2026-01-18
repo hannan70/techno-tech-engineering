@@ -30,32 +30,12 @@
                             font-size: 20px;
                             margin-right: 18px;
                             display: block; 
+                            color: #16A571;
                             @include transition($transition);
                             &:hover {
                                 background-color: $theme-color;
                                 color: $white-color !important;
                                 @include transform(rotate(360deg));
-                            }
-                        }
-                        &:nth-child(1) {
-                            a {
-                                color: $facebook;
-                            }
-                            
-                        }
-                        &:nth-child(2) {
-                           a {
-                                color: $youtube;
-                           }
-                        }
-                        &:nth-child(3) {
-                            a {
-                                 color: $instagram;
-                            }
-                        }
-                        &:nth-child(4) {
-                            a {
-                                 color: $tumblr;
                             }
                         }
                     }
@@ -67,6 +47,9 @@
                     position: relative;
                     padding-bottom: 12px; 
                     font-weight: 700;
+                    @include breakpoint(max-md) {
+                        margin-bottom: 20px;
+                    }
                     &::after {
                         position: absolute;
                         content: "";
@@ -110,6 +93,26 @@
                                 }
                             }
                         }
+                    }
+                }
+                .subscribe {
+                    input {
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        padding: 10px 20px;
+                        margin-top: 20px;
+                        border-radius: 8px;
+                    }
+                    .sendbtn {
+                        width: 100%;
+                        background-color: #fff;
+                        text-align: center;
+                        padding: 10px 0px;
+                        margin-top: 7px;
+                        border-radius: 8px;
+                        font-weight: 600;
+                        font-size: 18px;
                     }
                 }
             }

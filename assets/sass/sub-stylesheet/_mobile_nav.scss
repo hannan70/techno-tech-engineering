@@ -11,7 +11,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background: $theme-color;
+        background: $ash-color;
         padding: 18px 40px;
         .mobile_menu_top_left {
             .mobile_logo img {
@@ -23,7 +23,7 @@
             span {
                 i {
                     font-size: 30px;
-                    color: $white-color;
+                    color: $theme-color;
                     &.fa-solid.fa-xmark {
                         display: none;
                     }

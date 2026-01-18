@@ -7,6 +7,9 @@
         text-align: center;
         padding: 250px 0px 300px;
         color: #fff; 
+        @include breakpoint(max-xl) {
+          padding: 170px 0px 140px;
+        }
         .banner_content_inner {
           p {
                display: inline-block;
@@ -19,6 +22,15 @@
                font-size: 72px;
                font-weight: 700;
                line-height: 75px; 
+               @include breakpoint(max-md) {
+                    font-size: 48px;
+                    line-height: 60px;
+               }
+               @include breakpoint(max-sm) {
+                    font-size: 30px;
+                    line-height: 43px;
+               }
+
           }
         }
    }

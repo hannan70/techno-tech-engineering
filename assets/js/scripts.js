@@ -41,10 +41,10 @@ Version      : 1.0
 				slidesPerView: 4,
 			}, 
 			767: {
-				slidesPerView: 3,
+				slidesPerView: 2,
 			}, 
 			320: {
-				slidesPerView: 2,
+				slidesPerView: 1,
 			}, 
 		},
 	});

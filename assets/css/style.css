@@ -74,8 +74,12 @@ p, h4, h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-h2 {
+h2, a, h3 {
   font-family: "Open Sans", serif;
+}
+
+p {
+  font-family: "Roboto", serif;
 }
 
 .mb-100 {
@@ -165,6 +169,7 @@ h2 {
   left: 0;
   top: 0;
   width: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   z-index: 9999999999999 !important;
 }
 .header_section .header_bottom .header_inner {
@@ -277,7 +282,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #164343;
+  background: #f8fafe;
   padding: 18px 40px;
 }
 .mobile_menu .mobile_menu_top .mobile_menu_top_left .mobile_logo img {
@@ -286,7 +291,7 @@ h2 {
 }
 .mobile_menu .mobile_menu_top .mobile_menu_top_right span i {
   font-size: 30px;
-  color: #fff;
+  color: #164343;
 }
 .mobile_menu .mobile_menu_top .mobile_menu_top_right span i.fa-solid.fa-xmark {
   display: none;
@@ -397,6 +402,11 @@ h2 {
   padding: 250px 0px 300px;
   color: #fff;
 }
+@media (max-width: 1199px) {
+  .banner_section .banner_content {
+    padding: 170px 0px 140px;
+  }
+}
 .banner_section .banner_content .banner_content_inner p {
   display: inline-block;
   background-color: rgba(22, 67, 67, 0.4588235294);
@@ -408,6 +418,18 @@ h2 {
   font-size: 72px;
   font-weight: 700;
   line-height: 75px;
+}
+@media (max-width: 767px) {
+  .banner_section .banner_content .banner_content_inner h2 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+@media (max-width: 575px) {
+  .banner_section .banner_content .banner_content_inner h2 {
+    font-size: 30px;
+    line-height: 43px;
+  }
 }
 
 .sub_banner {
@@ -463,6 +485,14 @@ h2 {
   height: 90px;
   margin-bottom: 10px;
 }
+.category .category_area .category_inner .category_item h4 {
+  font-weight: 600;
+  font-size: 22px;
+}
+.category .category_area .category_inner .category_item p {
+  color: #16A571;
+  font-weight: 600;
+}
 .category .category_area .category_inner .swiper-button-next,
 .category .category_area .category_inner .swiper-button-prev {
   width: 40px;
@@ -472,6 +502,7 @@ h2 {
   display: inline-block;
   text-align: center;
   line-height: 40px;
+  top: 50% !important;
 }
 .category .category_area .category_inner .swiper-button-next::after,
 .category .category_area .category_inner .swiper-button-prev::after {
@@ -616,10 +647,16 @@ h2 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
 }
 .brand_section .brand_area .brand_inner .brand_item img {
   width: 132px;
   height: 90px;
+}
+@media (max-width: 991px) {
+  .brand_section .brand_area .brand_inner .brand_item img {
+    margin-bottom: 30px;
+  }
 }
 
 .testmonial_section {
@@ -692,7 +729,7 @@ h2 {
 }
 @media (max-width: 991px) {
   .blog_section {
-    margin: 80px;
+    margin: 80px 0px;
   }
 }
 .blog_section .blog_area .blog_title {
@@ -1200,6 +1237,7 @@ h2 {
   font-size: 20px;
   margin-right: 18px;
   display: block;
+  color: #16A571;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1211,23 +1249,16 @@ h2 {
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
 }
-.footer_section .footer_top .footer_area .footer_social_list ul li:nth-child(1) a {
-  color: #3b5998;
-}
-.footer_section .footer_top .footer_area .footer_social_list ul li:nth-child(2) a {
-  color: #cd201f;
-}
-.footer_section .footer_top .footer_area .footer_social_list ul li:nth-child(3) a {
-  color: #e4405f;
-}
-.footer_section .footer_top .footer_area .footer_social_list ul li:nth-child(4) a {
-  color: #34465d;
-}
 .footer_section .footer_top .footer_area .footer_title h4 {
   margin-bottom: 35px;
   position: relative;
   padding-bottom: 12px;
   font-weight: 700;
+}
+@media (max-width: 767px) {
+  .footer_section .footer_top .footer_area .footer_title h4 {
+    margin-bottom: 20px;
+  }
 }
 .footer_section .footer_top .footer_area .footer_title h4::after {
   position: absolute;
@@ -1267,6 +1298,24 @@ h2 {
 }
 .footer_section .footer_top .footer_area .footer_title .footer_list ul li .address .address_para p {
   color: #fff;
+}
+.footer_section .footer_top .footer_area .footer_title .subscribe input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+.footer_section .footer_top .footer_area .footer_title .subscribe .sendbtn {
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  padding: 10px 0px;
+  margin-top: 7px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
 }
 .footer_section .footer_bottom {
   background-color: #164343;
