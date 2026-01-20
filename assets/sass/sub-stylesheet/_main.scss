@@ -68,6 +68,12 @@
 // @@@@@@@@@@@@@@ category section @@@@@@@@@@@@@
 
 // @@@@@@@@@@@@@@ product section @@@@@@@@@@@@@
+.product_page {
+    margin-top: 100px;
+    @include breakpoint(max-lg) {
+        margin-top: 80px;
+    }
+}
 .product_section {
     margin-bottom: 100px;
     @include breakpoint(max-lg) {
@@ -427,20 +433,94 @@
 
 
 // @@@@@@@@@@@@@@ faq section start here @@@@@@@@@@@@@@@@@
-.faq_section {
+.faq_section { 
+    margin-bottom: 100px;
+    @include breakpoint(max-lg) {
+        margin-bottom: 80px;
+    }
     .faq_section_inner {
         .faq_title {
             margin-bottom: 30px;
+            width: 550px;
             h3 {
                 font-weight: 700;
+            }
+            p {
+                margin-top: 15px;
             }
         }
         .faq_inner {
             .accordion-item {
                 margin-bottom: 20px;
+                background: #F3F6F6 !important;
+                border: none !important;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                .accordion-header {
+                    .accordion-button {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: $title-color !important;
+                        text-align: left;
+                        overflow-anchor: none;
+                        background: #F3F6F6 !important;
+                        padding: 4px 20px !important;
+                        border: 1px solid #ddd !important;
+                        border-radius: 5px !important;
+                    }
+                }
             }
         }
     }
 }
 // @@@@@@@@@@@@@@ faq section end here @@@@@@@@@@@@@@@@@
+
+
+// @@@@@@@@@@@@@@ vision start here @@@@@@@@@@@@@@@@@
+.vision {
+    margin: 100px 0px;
+    @include breakpoint(max-lg) {
+        margin: 80px 0px;
+    }
+    .vision_area {
+        background-color: #F3F6F6;
+        padding: 100px 0px;
+        border-radius: 10px;
+        .vision_image {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .vision_content {
+            margin-top: 30px;
+        }
+    }
+}
+// @@@@@@@@@@@@@@ vision end here @@@@@@@@@@@@@@@@@
+
+// @@@@@@@@@@@@@@ Contact section start here @@@@@@@@@@@@@@@@@
+.contact_section {
+    margin: 100px 0px;
+    @include breakpoint(max-lg) {
+        margin: 80px 0px;
+    }
+    .contact_area {
+        .contact_content {
+            background-color: #164343;
+            border-radius: 24px;
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 0px;
+            .contact_item {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+// @@@@@@@@@@@@@@ Contact section end here @@@@@@@@@@@@@@@@@
 

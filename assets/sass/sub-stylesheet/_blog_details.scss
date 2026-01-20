@@ -29,13 +29,19 @@
                             margin-right: 10px;
                         }
                         .author_name {
-
+                            a {
+                                color: $theme-color;
+                            }
                         }
                         .date {
-
+                            a {
+                                color: $theme-color;
+                            }
                         }
                         .comment {
-
+                            a {
+                                color: $theme-color;
+                            }
                         }
                     }
                 }
@@ -118,208 +124,14 @@
                         }
                     }
                 }
-            }
-            .blog_review_section {
-                padding: 20px 35px;
-                @include breakpoint(max-sm) {
-                    padding: 20px;
-                }
-                .blog_review_title {
-                    @include flexbox;
-                    align-items: center;
-                    border-bottom: 1px solid #ddd;
-                    padding-bottom: 30px;
-                    justify-content: space-between;
-                    gap: 30px;
-                    .blog_review_title_text {
-                        h4 {
-                            font-size: 24px;
-                            font-weight: 600;
-                        }
-                    }
-                    .blog_review_title_btn {
-                        a {
-                            background-color: #F0F6FE;
-                            color: #737E8C;
-                            padding: 15px 20px;
-                            border-radius: 7px;
-                        }
-                        img {
-                            margin-right: 10px;
-                        }
-                    }
-                }
-                .blog_review_inner {  
-                    .comment_list_info {
-                        @include flexbox;
-                        align-items: start;
-                        .comment_thumb {
-                            padding: 0 20px 20px 0;
-                            img {
-                                width: 80px;
-                                height: 80px;
-                                border-radius: 5px;
-                            }
-                        }
-                        .comment_content {
-                            h4 {
-                                font-size: 18px;
-                                font-weight: 500;
-                                text-transform: capitalize;
-                                margin-bottom: 0;
-                            }
-                            p {
-
-                            }
-                        }
-                    }
-                    .comment_para {
-                        padding-bottom: 20px;
-                        .company-rating {
-                            @include flexbox;
-                            gap: 6px;
-                            margin-bottom: 10px;
-                            i {
-                            color: $star;
-                            }
-                        }
-                    }
-                    .comment_reply_btn {
-                        text-align: end;
-                        a {
-                            color:  $title-color;
-                            @include transition($transition);
-                            i {
-                                padding-right: 3px;
-                            }
-                        }
-                        &:hover a {
-                            color: $title-color;
-                        }
-                    }
-                    .incomment_list {
-                        padding: 30px 0;
-                    }
-                    .replay_list {
-                        padding: 30px 0 0 30px;
-                        border-top: 1px solid #ddd;
-                    } 
-                }
-            }
-            .comment-respond {
-                padding: 35px;
-                @include breakpoint(max-sm) {
-                    padding: 20px;
-                }
-                textarea#comment-reply,
-                input#name,
-                input#email {
-                    border: none;
-                    background: #F0F6FE;
-                    padding: 20px;
-                    border-radius: 4px;
-                    outline: none;
-                    color: $title-color;
-                }
-
-                textarea#comment-reply {
-                    width: 100%;
-                }
-
-                textarea#comment-reply,
-                input#name::placeholder,
-                input#email::placeholder {
-                    color: #000;
-                }
-                .commont_sub_title {
-                    h4 {}
-                }
-                .company_star_list {
-                    width: 100%;
-                    margin: 20px 0;
-                    ul {
-                        @include flexbox;
-                        .add_review_list {
-                            @include flexbox;
-                            width: 100%;
-                            padding-bottom: 10px;
-                            span {
-                                width: 150px;
-                            }
-                            .star-rating {
-                                display: flex;
-                                flex-direction: row-reverse;
-                                font-size: 20px;
-                                justify-content: space-around;
-                                padding: 0 10px;
-                                width: 120px;
-                                input {
-                                    display: none;
-                                }
-                                label {
-                                    color: #ccc;
-                                    cursor: pointer;
-                                }
-                                :checked ~ label,
-                                    label:hover,
-                                    label:hover ~ label {
-                                    color: $star;
-                                }
-                            }
-                        }
-                    }
-                }
-                .add-comment {
-                    .comment_res_btn {
-                        border: none;
-                        outline: none;
-                        margin-top: 15px;
-                        text-transform: uppercase;
-                        font-weight: 600;
-                        background-color: #F0F6FE;
-                        color: #737E8C;
-                        padding: 15px 20px;
-                        border-radius: 7px;
-                    }
-                }
-                .commont_sub_title {
-                    h4 {
-                        font-size: 24px;
-                        font-weight: 600;
-                    }
-                }
-            }
+            } 
+           
         }
         .widget {
             box-shadow: 0px 8px 24px rgba(115, 126, 140, 0.14);
             border-radius: 8px;
             padding: 30px;
-        }
-        .widget-search {
-            @include breakpoint(max-xl) {
-                margin-top: 30px;
-            }
-             .search {
-                background: #F0F6FE;
-                border: none;
-                padding: 16px 20px;
-                width: 100%;
-                border-radius: 8px;
-                outline: none;
-                color: #000;
-            }
-
-            .widget-form {
-                position: relative;
-            }
-
-            .search-icon {
-                position: absolute;
-                top: 34%;
-                right: 12px;
-                color: #000;
-            }
-        }
+        } 
         .widget-title {
             margin-bottom: 30px;
             span {
@@ -332,7 +144,7 @@
                     position: absolute;
                     width: 40px;
                     height: 4px;
-                    background-color: red;
+                    background-color: #16A571;
                     bottom: -15px;
                     border-radius: 2px;
                 }
@@ -340,7 +152,7 @@
                 &::after {
                     content: "";
                     position: absolute;
-                    border-bottom: 5px dotted red;
+                    border-bottom: 5px dotted #16A571;
                     width: 30px;
                     bottom: -15px;
                     left: 43px;
@@ -350,6 +162,27 @@
         .widget-post {
             .widget-wrapper {
                 display: inline-block;
+                width: 100%;
+                .category-widget-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    color: $title-color;
+                    border-top: 1px solid #ddd;
+                    padding-top: 20px;
+                    @include transition($transition);
+                    .blog_category_name {
+                        i {
+                            color: #16A571;
+                            font-size: 14px;
+                            margin-right: 10px;
+                        }
+                    }
+                    .blog_category_quantity { }
+                    &:hover {
+                        color: #16A571;
+                    }
+                }
                 .widget-item {
                     border-bottom: 1px solid #ddd;
                     padding-bottom: 20px;
