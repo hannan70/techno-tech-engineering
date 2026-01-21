@@ -1,4 +1,7 @@
 .header_section {
+    @include breakpoint(max-lg) {
+        display: none
+    }
     .header_top {
         @include flexbox;
         justify-content: space-between;
