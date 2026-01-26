@@ -1,0 +1,73 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+	outline: none; 
+	box-shadow: none;
+}
+
+h1 {font-size: $fs-h1;}
+h2 {font-size: $fs-h2;}
+h3 {font-size: $fs-h3;}
+h4 {font-size: $fs-h4;}
+h5 {font-size: $fs-h5;}
+h6 {font-size: $fs-h6;}
+
+
+@include breakpoint(sm) {
+	h1 {font-size: $fs-h1;line-height: $lh-h1;}
+	
+	h2{font-size: $fs-h2;line-height: $lh-h2;}
+	
+	h3 {font-size: $fs-h3;line-height: $lh-h3;}
+	
+	h4 {font-size:$fs-h4;line-height: $lh-h4;}
+	
+	h5 {font-size: $fs-h5;line-height: $lh-h5;}
+	
+	h6 {font-size: $fs-h6;line-height: $lh-h6;}
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+p, h4, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+h2, a, h3 {
+	font-family: $opensans;
+}
+p {
+	font-family: $roboto;
+}
+.mb-100 {
+	margin-bottom: 100px;
+}
+.mt-100 {
+	margin-top: 100px;
+}
+.my-100 {
+	margin: 100px 0px;
+}
+.m-100 {
+	margin: 100px;
+}
+.mt-20 {
+	margin-top: 20px;
+}
+.mb-20 {
+	margin-bottom: 20px;
+}
+.mt-30 {
+	margin-top: 30px;
+}
+.mb-30 {
+	margin-bottom: 30px;
+}

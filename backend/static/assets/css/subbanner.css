@@ -1,0 +1,41 @@
+
+/* ==============================================
+Subbanner Section Start here
+================================================= */
+.sub-banner {
+    background-image: url(../../assets/images/subbanner/demo1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000000b8;
+    background-blend-mode: overlay;
+    width: 100%;
+    display: inline-table;
+    background-size: cover;
+}
+.sub-banner-inner {
+    text-align: center;
+    padding: 100px 0px;
+}
+h2.sub_banner_title {
+    color: #fff;
+}
+.breadcrumb-item.active {
+    color: var(--primary_color);
+    font-weight: 600;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #fff;
+    font-weight: 600;
+}
+li.breadcrumb-item a {
+    color: #fff;
+    font-weight: 600;
+}
+.sub-banner-inner .common_title {
+    margin-bottom: 0;
+}
+
+/* ==============================================
+Subbanner Section Start here
+================================================= */
+ 
