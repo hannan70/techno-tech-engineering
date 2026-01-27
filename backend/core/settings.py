@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     "accounts",
     "banners",
     "categories",
-    "brands"
+    "brands",
+    "site_settings"
 ]
 
 MIDDLEWARE = [

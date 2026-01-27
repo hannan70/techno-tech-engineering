@@ -40,7 +40,7 @@
           <div class="mobile_menu_top"> 
                <div class="mobile_menu_top_left">
                     <div class="mobile_logo">
-                         <a href="index.html"><img src="assets/images/header-logo.png" alt="logo"></a>
+                         <a href="index.html"><img src="{% static 'assets/images/header-logo.png' %}" alt="logo"></a>
                     </div>
                </div>
                <div class="mobile_menu_top_right">
@@ -67,7 +67,7 @@
 
 
      <!-- banner section start here -->
-     <div class="banner_section">
+     <div class="banner_section" style="background-image: url('{{ banner.image.url }}');">
           <!-- header section start here -->
           <div class="header_section"> 
                <div class="container"> 
@@ -76,24 +76,24 @@
                               <ul>
                                    <li>
                                         <span><i class="fa-solid fa-phone"></i></span>
-                                        <span>+881234567890</span>
+                                        <span>{{ site_settings.phone }}</span>
                                    </li>
                                    <li>
                                         <span><i class="fa-solid fa-location-dot"></i></span>
-                                        <span>250 Parkway United States</span>
+                                        <span>{{ site_settings.address }}</span>
                                    </li>
                                    <li>
                                         <span><i class="fa-solid fa-envelope"></i></span>
-                                        <span>Support@medizoo.tid</span>
+                                        <span>{{ site_settings.email }}</span>
                                    </li>
                               </ul>
                          </div>
                          <div class="header_right">
-                              <ul>
-                                   <li><a href="#"><i class="fa-brands fa-twitter"></i></a> </li>
-                                   <li> <a href="#"><i class="fa-brands fa-linkedin-in"></i></a> </li>
-                                   <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li> 
-                                   <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                              <ul>   
+                                   <li><a target="_blank" href="{{ site_settings.twitter }}"><i class="fa-brands fa-twitter"></i></a> </li>
+                                   <li> <a target="_blank" href="{{ site_settings.linkedin }}"><i class="fa-brands fa-linkedin-in"></i></a> </li>
+                                   <li><a target="_blank" href="{{ site_settings.facebook }}"><i class="fa-brands fa-facebook-f"></i></a></li> 
+                                   <li><a target="_blank" href="{{ site_settings.instagram }}"><i class="fa-brands fa-instagram"></i></a></li>
                               </ul>
                          </div>
                     </div>
@@ -101,7 +101,7 @@
                          <div class="container"> 
                               <div class="header_inner d-flex justify-content-between align-items-center">
                                    <div class="logo">
-                                        <a href="index.html"><img src="assets/images/header-logo.png" alt="logo"></a>
+                                        <a href="index.html"><img src="{% static 'assets/images/header-logo.png' %}" alt="logo"></a>
                                    </div> 
                                    <nav class="primary_menu">
                                         <ul class="d-flex justify-content-between align-items-center">
@@ -122,8 +122,8 @@
           <div class="banner_content" data-aos="fade-up" data-aos-duration="1000">
                <div class="container">
                     <div class="banner_content_inner">
-                         <p>Core Hardware Architecture</p>
-                         <h2>Hardware Core Focused on the heart of the machine.</h2>
+                         <p>{{ banner.sub_title }}</p>
+                         <h2>{{ banner.title }}</h2>
                     </div>
                </div>
           </div>
