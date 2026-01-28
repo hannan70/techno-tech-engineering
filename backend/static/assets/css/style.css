@@ -603,7 +603,7 @@ p {
 }
 .product_section .product_section_inner .product_item .thumb img {
   width: 100%;
-  height: auto;
+  height: 180px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;

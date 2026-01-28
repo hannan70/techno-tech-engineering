@@ -7,15 +7,13 @@ from products.models import Product
 
 # Create your views here.
 def home_page(request):
-    banner = Banner.objects.order_by("-id").first()
-    site_settings = SiteSettings.objects.first()
+    banner = Banner.objects.order_by("-id").first() 
     categories = Category.objects.all()
     brands = Brand.objects.all()
     products = Product.objects.all()
     
     context = {
-        "banner": banner, 
-        "site_settings": site_settings,
+        "banner": banner,  
         "categories" : categories,
         "brands": brands,
         "products": products

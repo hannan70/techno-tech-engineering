@@ -12,13 +12,14 @@
                         <span>BDT-{{ product.product_price }}</span>
                     </div>
                     <div class="rating">
-                        <ul>
-
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
+                        <ul> 
+                            {% for i in "12345" %}
+                                {% if forloop.counter <= product.product_rating %}
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                {% else %}
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                {% endif %}
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
