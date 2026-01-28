@@ -42,7 +42,9 @@ INSTALLED_APPS = [
     "banners",
     "categories",
     "brands",
-    "site_settings"
+    "site_settings",
+    "products",
+    "ckeditor"
 ]
 
 MIDDLEWARE = [

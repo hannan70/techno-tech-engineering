@@ -1,0 +1,35 @@
+{% load static %}
+<div class="row g-4">
+    {% for product in products %}
+    <div class="col-xl-3 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-duration="1000">
+        <div class="product_item">
+            <div class="thumb">
+                <a href="{% url 'product_details' product.id %}"><img src="{{ product.image.url }}" alt="product-image"></a>
+            </div>
+            <div class="product_content">
+                <div class="product_content_top">
+                    <div class="price">
+                        <span>BDT-{{ product.product_price }}</span>
+                    </div>
+                    <div class="rating">
+                        <ul>
+
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product_sub_title">
+                    <a href="{% url 'product_details' product.id %}">{{ product.product_title }}</a>
+                </div>
+                <div class="product_btn">
+                    <a href="{% url 'product_details' product.id %}">Details <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div> 
