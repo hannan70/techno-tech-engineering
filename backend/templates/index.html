@@ -518,21 +518,11 @@
         <div class="container">
             <div class="brand_area">
                 <div class="brand_inner">
-                        <div class="brand_item" data-aos="zoom-in" data-aos-duration="1000">
-                            <img src="assets/images/brand01.png" alt="brand-image">
-                        </div>
-                        <div class="brand_item" data-aos="zoom-in" data-aos-duration="1000">
-                            <img src="assets/images/brand02.png" alt="brand-image">
-                        </div>
-                        <div class="brand_item" data-aos="zoom-in" data-aos-duration="1000">
-                            <img src="assets/images/brand03.png" alt="brand-image">
-                        </div>
-                        <div class="brand_item" data-aos="zoom-in" data-aos-duration="1000">
-                            <img src="assets/images/brand04.png" alt="brand-image">
-                        </div>
-                        <div class="brand_item" data-aos="zoom-in" data-aos-duration="1000">
-                            <img src="assets/images/brand05.png" alt="brand-image">
-                        </div> 
+                    {% for brand in brands %}
+                    <div class="brand_item" data-aos="zoom-in" data-aos-duration="1000">
+                        <img src="{{ brand.image.url }}" alt="brand-image">
+                    </div> 
+                    {% endfor %}
                 </div>
             </div>
         </div>
